@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <form id="converter-form">
+        <input type="number" id="temperature" placeholder="Enter Temperature" required>
+        <br><br>
+        <label>
+            <input type="radio" name="conversion" value="celsius-to-fahrenheit" checked> Celsius to Fahrenheit
+        </label>
+        <label>
+            <input type="radio" name="conversion" value="fahrenheit-to-celsius"> Fahrenheit to Celsius
+        </label>
+        <br><br>
+        <button type="button" id="convert-button">Convert</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="./js/tempcon.js"></script>
+</body>
+</html>
