@@ -6,14 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const UnitResult = document.getElementById("Unit2");
   const Temp = document.getElementById("temp");
   const BtCancel = document.getElementById("btn-cancel");
-  
 
  console.log (temp.value)
   function tempconvert() {
     const Temp1 = parseFloat(Temp.value);
     let result ;
     if (isNaN(Temp1)) {
-        resultElement.textContent = "กรุณาใส่ตัวเลขด้วย";
+        NaN.textContent = "กรุณาใส่ตัวเลขด้วย";
       return;
     } else if (Radio[0].checked) {
       result = (Temp1 * 9) / 5 + 32
@@ -43,4 +42,3 @@ document.addEventListener("DOMContentLoaded", function () {
   convertButton.addEventListener("click", tempconvert);
   BtCancel.addEventListener("click", cancel);
 });
-
